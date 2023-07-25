@@ -13,6 +13,7 @@
     <style>
         body{
             background-color: white;
+            font-family: 'Lato', sans-serif;
         }
         .primary-color{
             background-color: #F85559;
@@ -21,10 +22,13 @@
             z-index: 1;
         }
     </style>
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="px-4 lg:px-52 lg:mt-20"> 
-        <header class="">
+        <header class="px-4 lg:px-52">
         <!-- Navbar -->
         <div class="navbar bg-white text-black lg:bg-[#F85559] lg:text-white lg:rounded-full  md:bg-[#F85559] md:text-white md:rounded-full">
             <div class="navbar-start lg:-ml-16">
@@ -32,7 +36,7 @@
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -70,9 +74,10 @@
             </div>
         </div>
         </header> 
+    <div class="px-4 lg:px-52"> 
         <main>
             <!-- Hero section -->
-          <section class="mt-10">
+          <section class="mt-3 lg:mt-10">
             <!-- her0-overlay -->
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full lg:h-[500px]">
@@ -81,7 +86,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md text-white">
-                            <h1 class="mb-5 text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
+                            <h1 class="mb-5 text-2xl lg:text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn btn-primary">Shop Now</button>
                           </div>
@@ -99,7 +104,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md text-white">
-                            <h1 class="mb-5 text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
+                            <h1 class="mb-5 text-2xl lg:text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn btn-primary">Shop Now</button>
                           </div>
@@ -117,7 +122,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md text-white">
-                            <h1 class="mb-5 text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
+                            <h1 class="mb-5 text-2xl lg:text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn btn-primary">Shop Now</button>
                           </div>
@@ -135,7 +140,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-md text-white">
-                            <h1 class="mb-5 text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
+                            <h1 class="mb-5 text-2xl lg:text-4xl font-black">Exotic tastes at your<br>doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn btn-primary">Shop Now</button>
                           </div>
@@ -154,35 +159,38 @@
 
       </section>
       <!-- Deal of the day section -->
-      <section>
-        <div>
+      <section class="mt-20">
+        <div class="flex flex-col lg:flex-row lg:justify-between text-black">
             <div>
-                <h3 class="mb-5 text-3xl font-black">Deal of the day</h3>
-                <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>
+                <h3 class="mb-5 text-3xl lg:text-4xl font-black text-center lg:text-left">Deal of the day</h3>
+                <p class="mb-5 text-center lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>
                 Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="font-bold lg:text-2xl mx-auto">
+                <div class="grid grid-flow-col lg:gap-2 text-center auto-cols-max">
                     <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
+                      <span class="countdown font-mono text-3xl">
                         <span style="--value:15;"></span>
                       </span>
                       days
                     </div> 
+                    <img class="mt-2" style="width: 40px; height: 40px;" src="./images/three_dott.svg" alt="">
                     <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
+                      <span class="countdown font-mono text-3xl">
                         <span style="--value:10;"></span>
                       </span>
                       hours
-                    </div> 
+                    </div>
+                    <img class="mt-2" style="width: 40px; height: 40px;" src="./images/three_dott.svg" alt="">
                     <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
+                      <span class="countdown font-mono text-3xl">
                         <span style="--value:24;"></span>
                       </span>
                       min
                     </div> 
+                    <img class="mt-2" style="width: 40px; height: 40px;" src="./images/three_dott.svg" alt="">
                     <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
+                      <span class="countdown font-mono text-3xl">
                         <span style="--value:35;"></span>
                       </span>
                       sec
